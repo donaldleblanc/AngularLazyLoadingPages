@@ -1,0 +1,14 @@
+<div class="jumbotron text-center">
+	<h1>Contact Page</h1>
+
+	<p>{{ contactMessage }}</p>
+
+  <input type="text" ng-model="user.firstName"/>
+  <div>Hello, {{user.firstName}}!</div>
+
+  <div ng-repeat="user in users | filter:user">
+         {{user.firstName}} {{user.lastName}} - Age: {{user.age}}
+  </div>
+
+  <button ng-click="changeFirstUsersFirstName()">Change Name</button>
+</div>
